@@ -5,12 +5,13 @@ nav:
         - Introduction: index.md
         - Installation: installation.md
         - Cage Gizmo: cage_gizmo.md
+        - Tools: tools.md
     - Modules:
         - Align: align.md
         - Fit: fit.md
         - Distribute: distribute.md
         - Array: array.md
-        - Clamp: fit.md
+        - Clamp: clamp.md
         - Rotate: rotate.md
         - Scale: scale.md
     - Additional:

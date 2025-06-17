@@ -1,4 +1,6 @@
-# Zen Dock Installation
-![Installation](img/screen/installation.png)
+# Zen Cage Installation
 
-To install addon go to **Preferences --- Addons --- Install**, then you can enable addon by clicking on the checkbox.
+To install add-on, click the **Install from Disk** menu item and select the add-on’s .zip file.
+
+!!! Note
+    The add-on will not be automatically enabled after installation; **click the checkbox to do that**.
