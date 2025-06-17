@@ -54,6 +54,30 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Align</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#align-by">Align By</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#bounding-box">Bounding Box</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#origin">Origin</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#align-outside">Align Outside</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#align-to-axis">Align To Axis</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#align-transform-components">Align Transform Components</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#location">Location</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rotation">Rotation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#scale">Scale</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hierarchy-mode">Hierarchy Mode</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../fit/">Fit</a>
@@ -105,6 +129,122 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="align-objects">Align Objects<a class="headerlink" href="#align-objects" title="Permanent link"></a></h1>
+<p>The Align tool is used to align multiple selected objects so they line up on a specified axis.</p>
+<h2 id="align-by">Align By<a class="headerlink" href="#align-by" title="Permanent link"></a></h2>
+<p>The <strong>Align By</strong> property determines how objects are aligned relative to their reference points. Users can choose between two alignment options: <a href="#bounding-box"><strong>Bounding Box</strong></a> and <a href="#origin"><strong>Origin</strong></a>.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/align_align_by.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/align_align_by.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Align By</strong> property</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bounding-box">Bounding Box<a class="headerlink" href="#bounding-box" title="Permanent link"></a></h3>
+<ul>
+<li>Objects are aligned based on their bounding box sides.</li>
+<li>The alignment adjusts to the outermost edges of the bounding box, ensuring that objects are positioned relative to their calculated boundaries.</li>
+<li>Ideal for aligning objects using their total selection dimensions rather than individual origin points.</li>
+</ul>
+<h3 id="origin">Origin<a class="headerlink" href="#origin" title="Permanent link"></a></h3>
+<ul>
+<li>Objects are aligned by their origin point rather than the bounding box.</li>
+<li>The bounding box itself shifts to match the position of the object’s defined origin.</li>
+<li>Useful for precise origin-based alignment, especially in workflows requiring consistency in pivot placement.</li>
+</ul>
+<h2 id="align-outside">Align Outside<a class="headerlink" href="#align-outside" title="Permanent link"></a></h2>
+<p>The <strong>Align Outside</strong> option ensures objects are aligned by the outer side of the bounding box cage, rather than the inner boundaries. When enabled, alignment calculations use the external edges of the bounding box as the reference point.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/align_outside.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/align_outside.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Align Outside</strong> property</td>
+</tr>
+</tbody>
+</table>
+<h2 id="align-to-axis">Align To Axis<a class="headerlink" href="#align-to-axis" title="Permanent link"></a></h2>
+<p>The <strong>Align To Axis</strong> property controls how objects are aligned when clicking on a bounding box cage  point. This setting determines whether alignment occurs along a predefined axis or directly at the selected point.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/align_to_axis.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/align_to_axis.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Align To Axis</strong> property</td>
+</tr>
+</tbody>
+</table>
+<h2 id="align-transform-components">Align Transform Components<a class="headerlink" href="#align-transform-components" title="Permanent link"></a></h2>
+<p>The Align Transform Components property determines how objects are aligned based on their transform attributes: <a href="#location"><strong>Location</strong></a>, <a href="#rotation"><strong>Rotation</strong></a>, and <a href="#scale"><strong>Scale</strong></a>. The alignment operation is applied depending on the selected components, allowing users to control which aspects of an object&rsquo;s transformation are adjusted.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/align_components.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/align_components.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example to combinate location and rotation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="location">Location<a class="headerlink" href="#location" title="Permanent link"></a></h3>
+<p>Aligns objects by their positional coordinates, ensuring they are placed according to the chosen alignment method.</p>
+<h3 id="rotation">Rotation<a class="headerlink" href="#rotation" title="Permanent link"></a></h3>
+<p>Matches the rotational orientation of objects based on the specified alignment reference.</p>
+<h3 id="scale">Scale<a class="headerlink" href="#scale" title="Permanent link"></a></h3>
+<p>Adjusts the scale of objects so they conform to the defined alignment settings.</p>
+<p><strong>How It Works:</strong></p>
+<ul>
+<li>
+<p>Users can enable or disable each component separately.</p>
+</li>
+<li>
+<p>If only <strong>Location</strong> is selected, objects align without changing their rotation or scale.</p>
+</li>
+<li>
+<p>If <strong>Rotation</strong> is included, the objects match the rotation of the reference alignment.</p>
+</li>
+<li>
+<p>If <strong>Scale</strong> is active, objects are resized accordingly to maintain proportional alignment.</p>
+</li>
+</ul>
+<h3 id="hierarchy-mode">Hierarchy Mode<a class="headerlink" href="#hierarchy-mode" title="Permanent link"></a></h3>
+<p>The <strong>Hierarchy Mode</strong> property allows users to align entire object hierarchies by selecting any part of a nested hierarchy structure. Instead of aligning only the selected object, this mode ensures that all related objects (parent and children) are adjusted while maintaining their relative transformations.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/align_hierarchy_mode.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/align_hierarchy_mode.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Hierarchy Mode</strong> property</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How It Works:</strong></p>
+<ul>
+<li>
+<p>Users select <strong>any object</strong> within a parent-child hierarchy.</p>
+</li>
+<li>
+<p>The alignment operation is applied to the <strong>entire hierarchy</strong>, adjusting the parent and all child objects together.</p>
+</li>
+<li>
+<p><strong>Relative transformations</strong> such as <strong>position, rotation, and scale</strong> of child objects are preserved, ensuring structural integrity remains intact.</p>
+</li>
+</ul>
               
             </div>
           </div><footer>
