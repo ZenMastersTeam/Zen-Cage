@@ -47,7 +47,7 @@ The **Margin** property controls the spacing between distributed objects, ensuri
 ## Fit To Cage
 The **Fit to Cage** option determines whether the object should conform precisely to [the bounding box cage's](cage_gizmo.md) limits during distribution.
 
-| ![](img/screen/distribute_margin.gif) |
+| ![](img/screen/distribute_fit_to_cage.gif) |
 |---|
 | The **Fit To Cage** property |
 
