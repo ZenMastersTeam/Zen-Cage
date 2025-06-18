@@ -56,6 +56,30 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Fit</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#fit-outside">Fit Outside</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uniform-scale">Uniform Scale</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scale-mode">Scale Mode</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#min-smallest-scale-component">Min (Smallest Scale Component)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mid-median-scale-component">Mid (Median Scale Component)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#max-largest-scale-component">Max (Largest Scale Component)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fit-components">Fit Components</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#location">Location</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rotation">Rotation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#both-location-and-rotation">Both (Location and Rotation)</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../distribute/">Distribute</a>
@@ -105,6 +129,117 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="fit-objects">Fit Objects<a class="headerlink" href="#fit-objects" title="Permanent link"></a></h1>
+<p>The <strong>Fit Objects</strong> transform mode allows users to adjust an object&rsquo;s dimensions to align precisely with a predefined <a href="../cage_gizmo/">bounding box transform cage</a>. This method ensures objects conform to specific spatial constraints efficiently.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/fit_preview.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/fit_preview.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of Fit</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Usage:</strong></p>
+<ol>
+<li>
+<p><strong>Activate Fit Mode:</strong></p>
+<ul>
+<li>Navigate to the Zen Transform Cage tool and select Fit mode.</li>
+</ul>
+</li>
+<li>
+<p><strong>Manipulate the Cage:</strong></p>
+<ul>
+<li>Adjust the cage size and position to set transformation boundaries.</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply Transformation:</strong></p>
+<ul>
+<li>Click any control point to adjust the object&rsquo;s dimensions to match the cage’s corresponding bounds.</li>
+</ul>
+</li>
+</ol>
+<h2 id="fit-outside">Fit Outside<a class="headerlink" href="#fit-outside" title="Permanent link"></a></h2>
+<p>The <strong>Fit Outside</strong> property modifies the transformation behavior by ensuring the object aligns with the outer boundaries of <a href="../cage_gizmo/">the bounding box cage</a> instead of fitting within it.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/fit_outside.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/fit_outside.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Fit Outside</strong> property</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How It Works</strong></p>
+<ul>
+<li>
+<p>When Fit Outside is active, clicking a control point adjusts the object to match the external dimensions of the cage.</p>
+</li>
+<li>
+<p>The object&rsquo;s size will increase as necessary to ensure it does not enter the cage but rather conforms to its outer limits.</p>
+</li>
+</ul>
+<h2 id="uniform-scale">Uniform Scale<a class="headerlink" href="#uniform-scale" title="Permanent link"></a></h2>
+<p>The <strong>Uniform Scale</strong> property controls how an object scales when conforming to the bounding box cage. It determines whether the transformation adjusts proportions independently or maintains the object&rsquo;s original aspect ratio.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/fit_uniform_scale.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/fit_uniform_scale.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Uniform Scale</strong> property</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scale-mode">Scale Mode<a class="headerlink" href="#scale-mode" title="Permanent link"></a></h2>
+<p>The <strong>Scale Mode</strong> property determines how an object&rsquo;s target scale is computed when fitting the bounding box cage. This property offers three distinct scaling approaches, allowing users to control which dimension dictates the transformation.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/fit_scale_mode.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/fit_scale_mode.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Scale Mode</strong> property</td>
+</tr>
+</tbody>
+</table>
+<h3 id="min-smallest-scale-component">Min (Smallest Scale Component)<a class="headerlink" href="#min-smallest-scale-component" title="Permanent link"></a></h3>
+<p>The object&rsquo;s scale is adjusted based on its smallest dimension. This ensures the object fits the cage while maintaining a conservative scaling approach.</p>
+<h3 id="mid-median-scale-component">Mid (Median Scale Component)<a class="headerlink" href="#mid-median-scale-component" title="Permanent link"></a></h3>
+<p>The scaling is based on the object&rsquo;s middle dimension, providing a balanced transformation.</p>
+<h3 id="max-largest-scale-component">Max (Largest Scale Component)<a class="headerlink" href="#max-largest-scale-component" title="Permanent link"></a></h3>
+<p>The object scales according to its largest dimension, ensuring it fully conforms to the cage but may result in more significant resizing.</p>
+<h2 id="fit-components">Fit Components<a class="headerlink" href="#fit-components" title="Permanent link"></a></h2>
+<p>The <strong>Fit Components</strong> setting determines which transformation aspects (<a href="#location"><strong>Location</strong></a> or <a href="#rotation"><strong>Rotation</strong></a>) are applied when fitting an object to the bounding box cage.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/fit_loc_rot.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/fit_loc_rot.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Fit Components</strong> property</td>
+</tr>
+</tbody>
+</table>
+<h3 id="location">Location<a class="headerlink" href="#location" title="Permanent link"></a></h3>
+<p>Adjusts the object&rsquo;s position to align with the cage while keeping its original rotation.</p>
+<h3 id="rotation">Rotation<a class="headerlink" href="#rotation" title="Permanent link"></a></h3>
+<p>Modifies the object&rsquo;s orientation to match the alignment of the cage without changing its position.</p>
+<h3 id="both-location-and-rotation">Both (Location and Rotation)<a class="headerlink" href="#both-location-and-rotation" title="Permanent link"></a></h3>
+<p>If both options are selected, the object is repositioned and reoriented to conform fully to the cage’s layout.</p>
               
             </div>
           </div><footer>

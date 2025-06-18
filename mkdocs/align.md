@@ -33,7 +33,7 @@ The **Align To Axis** property controls how objects are aligned when clicking on
 | The **Align To Axis** property |
 
 ## Align Transform Components
-The Align Transform Components property determines how objects are aligned based on their transform attributes: [**Location**](#location), [**Rotation**](#rotation), and [**Scale**](#scale). The alignment operation is applied depending on the selected components, allowing users to control which aspects of an object's transformation are adjusted.
+The Align Transform Components property determines how objects are aligned based on their transform attributes: [**Location**](#location) and [**Rotation**](#rotation). The alignment operation is applied depending on the selected components, allowing users to control which aspects of an object's transformation are adjusted.
 
 | ![](img/screen/align_components.gif) |
 |---|
@@ -45,9 +45,6 @@ Aligns objects by their positional coordinates, ensuring they are placed accordi
 ### Rotation
 Matches the rotational orientation of objects based on the specified alignment reference.
 
-### Scale
-Adjusts the scale of objects so they conform to the defined alignment settings.
-
 **How It Works:**
 
 - Users can enable or disable each component separately.
@@ -55,8 +52,6 @@ Adjusts the scale of objects so they conform to the defined alignment settings.
 - If only **Location** is selected, objects align without changing their rotation or scale.
 
 - If **Rotation** is included, the objects match the rotation of the reference alignment.
-
-- If **Scale** is active, objects are resized accordingly to maintain proportional alignment.
 
 ### Hierarchy Mode
 The **Hierarchy Mode** property allows users to align entire object hierarchies by selecting any part of a nested hierarchy structure. Instead of aligning only the selected object, this mode ensures that all related objects (parent and children) are adjusted while maintaining their relative transformations.
