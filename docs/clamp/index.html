@@ -62,6 +62,8 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Clamp</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#uniform-scale">Uniform Scale:</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../rotate/">Rotate</a>
@@ -105,6 +107,49 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="clamp-objects">Clamp Objects<a class="headerlink" href="#clamp-objects" title="Permanent link"></a></h1>
+<p>The Clamp mode enables users to conform selected objects to specific boundaries of <a href="../cage_gizmo/">the bounding box cage</a>. This functionality is designed for intuitive spatial manipulation, allowing objects to be scaled and aligned relative to the cage geometry.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/clamp_objects.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/clamp_objects.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of Clamp</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Clamping Behavior:</strong></p>
+<ul>
+<li>
+<p>When a handle is clicked, the object is scaled and adjusted to touch the selected face(s) of <a href="../cage_gizmo/">the cage</a>.</p>
+</li>
+<li>
+<p>The side of the object opposite to the clicked handle remains stationary.</p>
+</li>
+</ul>
+<h2 id="uniform-scale">Uniform Scale:<a class="headerlink" href="#uniform-scale" title="Permanent link"></a></h2>
+<ul>
+<li>
+<p><strong>Enabled</strong>: Maintains the object’s proportions by applying uniform scaling across all axes.</p>
+</li>
+<li>
+<p><strong>Disabled</strong>: Allows non-uniform scaling, adjusting only in the direction of the selected handle.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/clamp_objects_uniform_scale.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/clamp_objects_uniform_scale.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Uniform Scale</strong> property</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>

@@ -1,9 +1,30 @@
 # Distribute Objects
-The Distribute Objects tool allows users to arrange objects along a defined axis based on interactions with [the bounding box cage](cage_gizmo.md). The distribution starts from the clicked point and extends towards the opposite point, ensuring controlled placement.
+The Distribute Objects tool allows users to arrange objects along a [defined axis](#distribution-axis) based on interactions with [the bounding box cage](cage_gizmo.md). 
+
+## Distribution Axis
+### Default Axis
+The distribution starts from the clicked point and extends towards the opposite point, ensuring controlled placement.
 
 | ![](img/screen/distribute_preview.gif) |
 |---|
-| Example of Distribute |
+| Default distribution axis |
+
+### Axis By Origin
+The distribution starts from the distribution origin and extends towards the clicked point, ensuring controlled placement.
+
+| ![](img/screen/distribute_origin_indication.png) |
+|---|
+| Distribution Origin |
+
+!!! Note
+    Distribution origin can be removed by pressing reset button in the mode options
+
+#### Origin Setup
+- **`Ctrl + LMB`** - Toggle distribution origin
+
+| ![](img/screen/distribute_origin_axis.gif) |
+|---|
+| Distribute objects from origin to clicked point |
 
 ## Distribution Mode
 The **Distribution Mode** property determines how objects are spaced and aligned when being distributed along the [cage’s](cage_gizmo.md) axis. Users can choose between three different methods, each offering a unique approach to object placement.

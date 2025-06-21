@@ -58,6 +58,18 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Distribute</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#distribution-axis">Distribution Axis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#default-axis">Default Axis</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#axis-by-origin">Axis By Origin</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#origin-setup">Origin Setup</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#distribution-mode">Distribution Mode</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#keep-distance">Keep Distance</a>
@@ -121,7 +133,10 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="distribute-objects">Distribute Objects<a class="headerlink" href="#distribute-objects" title="Permanent link"></a></h1>
-<p>The Distribute Objects tool allows users to arrange objects along a defined axis based on interactions with <a href="../cage_gizmo/">the bounding box cage</a>. The distribution starts from the clicked point and extends towards the opposite point, ensuring controlled placement.</p>
+<p>The Distribute Objects tool allows users to arrange objects along a <a href="#distribution-axis">defined axis</a> based on interactions with <a href="../cage_gizmo/">the bounding box cage</a>. </p>
+<h2 id="distribution-axis">Distribution Axis<a class="headerlink" href="#distribution-axis" title="Permanent link"></a></h2>
+<h3 id="default-axis">Default Axis<a class="headerlink" href="#default-axis" title="Permanent link"></a></h3>
+<p>The distribution starts from the clicked point and extends towards the opposite point, ensuring controlled placement.</p>
 <table>
 <thead>
 <tr>
@@ -130,7 +145,41 @@
 </thead>
 <tbody>
 <tr>
-<td>Example of Distribute</td>
+<td>Default distribution axis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="axis-by-origin">Axis By Origin<a class="headerlink" href="#axis-by-origin" title="Permanent link"></a></h3>
+<p>The distribution starts from the distribution origin and extends towards the clicked point, ensuring controlled placement.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/distribute_origin_indication.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/distribute_origin_indication.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distribution Origin</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Distribution origin can be removed by pressing reset button in the mode options</p>
+</div>
+<h4 id="origin-setup">Origin Setup<a class="headerlink" href="#origin-setup" title="Permanent link"></a></h4>
+<ul>
+<li><strong><code>Ctrl + LMB</code></strong> - Toggle distribution origin</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/distribute_origin_axis.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/distribute_origin_axis.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distribute objects from origin to clicked point</td>
 </tr>
 </tbody>
 </table>
