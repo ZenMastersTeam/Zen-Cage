@@ -64,6 +64,26 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Rotate</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rotate-setup">Rotate Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#the-sync-with-3d-cursor">The Sync with 3D Cursor</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rotation">Rotation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dial-rotate-gizmo">Dial Rotate Gizmo</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#global-transform-orientation">Global Transform Orientation</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#local-transform-orientation">Local Transform Orientation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#arrow-rotate-gizmo">Arrow Rotate Gizmo</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../scale/">Scale</a>
@@ -105,6 +125,102 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="rotate-objects">Rotate Objects<a class="headerlink" href="#rotate-objects" title="Permanent link"></a></h1>
+<p>The Rotate Objects mode enables users to rotate selected objects around the Pivot Point. It consists of two submodes: <a href="#rotate-setup"><strong>Setup</strong></a> and <a href="#rotation"><strong>Rotation</strong></a>, which work to define the pivot and apply rotation with precision.</p>
+<h2 id="rotate-setup">Rotate Setup<a class="headerlink" href="#rotate-setup" title="Permanent link"></a></h2>
+<p>In this mode, users define the pivot point for rotation. By clicking on any point of the bounding box cage, the pivot point is reassigned to that location. Once a pivot is set, a rotation gizmo appears at the selected point, displaying three interactive dials aligned with the X, Y, and Z axes.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/rotate_pivot_setup.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/rotate_pivot_setup.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotate Setup</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-sync-with-3d-cursor">The Sync with 3D Cursor<a class="headerlink" href="#the-sync-with-3d-cursor" title="Permanent link"></a></h3>
+<p>The <strong>Sync with 3D Cursor</strong> property allows users to synchronize the 3D cursor’s location and rotation with the current rotation pivot point defined in the <a href="#rotate-setup">Rotate setup</a>.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/rotate_pivot_setup_3d_cursor.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/rotate_pivot_setup_3d_cursor.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Sync with 3D Cursor</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rotation">Rotation<a class="headerlink" href="#rotation" title="Permanent link"></a></h2>
+<h3 id="dial-rotate-gizmo">Dial Rotate Gizmo<a class="headerlink" href="#dial-rotate-gizmo" title="Permanent link"></a></h3>
+<p>Users rotate objects by dragging the dials on the gizmo. The rotation is applied to all selected objects, using the designated pivot point as the center.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only <strong>Global</strong> and <strong>Local</strong> transform orientations are supported!</p>
+</div>
+<h4 id="global-transform-orientation">Global Transform Orientation<a class="headerlink" href="#global-transform-orientation" title="Permanent link"></a></h4>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/rotate_pivot_dial.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/rotate_pivot_dial.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../cage_gizmo/#global">Global</a> rotation using dial gizmo</td>
+</tr>
+</tbody>
+</table>
+<h4 id="local-transform-orientation">Local Transform Orientation<a class="headerlink" href="#local-transform-orientation" title="Permanent link"></a></h4>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/rotate_pivot_dial_local.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/rotate_pivot_dial_local.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../cage_gizmo/#local">Local</a> rotation using dial gizmo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="arrow-rotate-gizmo">Arrow Rotate Gizmo<a class="headerlink" href="#arrow-rotate-gizmo" title="Permanent link"></a></h3>
+<p>Each dial also has left and right arrows:</p>
+<ul>
+<li>
+<p><strong><code>LMB</code></strong> on an arrow rotates the object by 90 degrees on the corresponding axis.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/rotate_pivot_90.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/rotate_pivot_90.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotation by 90° using arrows</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong><code>Ctrl + LMB</code></strong> rotates the object by 180 degrees.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/rotate_pivot_180.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/rotate_pivot_180.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotation by 180° using arrows</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
               
             </div>
           </div><footer>

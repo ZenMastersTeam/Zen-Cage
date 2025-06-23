@@ -98,6 +98,9 @@ This feature determines whether the bounding box is built using an object's orig
 ## Transform Orientation
 The Transform Orientation determines the orientation of the Zen Cage Gizmo. Changing this orientation can make it easier to perform transformations in the direction you want.
 
+!!! Note
+    Only **Global** and **Local** transform orientations are supported!
+
 ### Global
 Align the transformation cage to world space. The world axes are shown by the Navigation Gizmo in the top right corner of the viewport, as well as the Grid Floor.
 

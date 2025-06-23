@@ -66,6 +66,14 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Scale</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#transform-orientation">Transform Orientation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#global">Global</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#local">Local</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                   </li>
               </ul>
@@ -105,6 +113,53 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="scale-objects">Scale Objects<a class="headerlink" href="#scale-objects" title="Permanent link"></a></h1>
+<p>The Scale tool is a <a href="../cage_gizmo/">bounding box cage</a> around the object(s) which scales objects from a particular point or axis. The tool works by selecting a scale point and dragging inwards or outwards to adjust the scale accordingly. The origin for the scale will be from the point on the cube directly opposite from the point selected. Selecting points on the faces of the cube scales along one axis, selecting points on the edges of the cube scales along two axes, and selecting points on the vertices of the cube scales along all three axes.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/scale_cage.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/scale_cage.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of Scale</td>
+</tr>
+</tbody>
+</table>
+<h2 id="transform-orientation">Transform Orientation<a class="headerlink" href="#transform-orientation" title="Permanent link"></a></h2>
+<p>The Transform Orientation determines the orientation of the Zen Cage Gizmo. Changing this orientation can make it easier to perform transformations in the direction you want.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only <strong>Global</strong> and <strong>Local</strong> transform orientations are supported!</p>
+</div>
+<h3 id="global">Global<a class="headerlink" href="#global" title="Permanent link"></a></h3>
+<p>Align the transformation cage to world space. The world axes are shown by the Navigation Gizmo in the top right corner of the viewport, as well as the Grid Floor.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/scale_cage_orient_global.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/scale_cage_orient_global.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scale Global Transform Orientation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="local">Local<a class="headerlink" href="#local" title="Permanent link"></a></h3>
+<p>Align the transformation cage to the active object’s orientation.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/scale_cage_orient_local.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/scale_cage_orient_local.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scale Local Transform Orientation</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
