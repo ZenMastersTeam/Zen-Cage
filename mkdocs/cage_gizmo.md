@@ -2,8 +2,8 @@
 Zen Cage Gizmo is an object gizmo that allows mouse-controlled transform operations in the 3D Viewport. 
 
 !!! Reference
-    **Mode:** &nbsp; Object <br>
-    **Tool:** &nbsp; `Toolbar -> Zen Transform Cage`
+    **Mode:** &nbsp; **Object** <br>
+    **Tool:** &nbsp; **`Toolbar -> Zen Transform Cage`**
 
 | ![](img/screen/cage_tool_preview.png) |
 |---|
