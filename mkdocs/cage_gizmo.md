@@ -114,3 +114,13 @@ Align the transformation cage to the active object’s orientation.
 | ![](img/screen/cage_local_transform_orientation.png) |
 |---|
 | Local Transform Orientation |
+
+## Cage Presets
+Cage presets for reuse.  
+Save as many cages as needed for your project.
+
+![Presets Header](img/screen/panel_cage_presets.png)
+
+You can also find the presets expanded in the N-panel under the **Tool** tab.
+
+![Presets n-panel](img/screen/n_panel_cage_presets.png)
